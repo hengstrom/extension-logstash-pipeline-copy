@@ -2,14 +2,11 @@
     "manifest_version": 2,
     "name": "Logstash pipeline conf saver",
     "version": "1.0",
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
     "description": "Send managed Logstash pipelines to git",
     "permissions": [
       "activeTab",
-      "downloads"
+      "downloads",
+      "http://localhost:5000/*"
     ],
     "browser_action": {
       "default_popup": "popup.html"

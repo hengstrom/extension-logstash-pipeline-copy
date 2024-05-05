@@ -33,12 +33,15 @@
   </style>
 </head>
 <body>
-    <input type="text" id="filenameInput" placeholder="Enter Logstash pipeline name">
+    <input type="text" id="filenameInput" placeholder="Enter Logstash pipeline ID">
     <br>
     <br>
-    <textarea id="textInput" placeholder="Enter text..."></textarea>
+    <textarea id="textInput" placeholder="Enter Logstash pipeline config"></textarea>
     <br>
     <button id="submitButton">Submit</button>
+    <br>
+    <!-- Add a textarea for displaying the response message -->
+    <textarea id="responseTextarea" rows="3" placeholder="Response will appear here" readonly></textarea>
     <script src="popup.js"></script>
   </body>
 </html>
